@@ -189,13 +189,13 @@ header{
 }
 
 .flex_box2{
-    background-color: dodgerblue;
+    /* background-color: dodgerblue; */
     padding: 10px;
     flex: 100%;
     width: 50%;
 }
 .flex_box3{
-    background-color: rgb(208, 221, 235);
+    /* background-color: rgb(208, 221, 235); */
     padding: 10px;
     flex: 100%;
     width: 50%;
@@ -327,7 +327,7 @@ header{
 }
 .music audio{
     display: flex;
-    max-width: 40vw;
+    max-width: 45vw;
     height: 5vh;
     border-radius: 34px;
 }
