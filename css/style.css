@@ -355,6 +355,10 @@ header{
     .flex_box3{
         width: 85%;  
     }
+
+    #f1{
+        font-weight: 900;
+    }
     /* .vertival_line{
         width: 2px;
         height: 8vh;
