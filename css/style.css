@@ -21,7 +21,7 @@ header{
     display: flex;
     background-color: white;
     justify-content: space-between;
-    padding: 13px 6%;
+    padding: 2px 6%;
     align-items: center;
 }
 .logo{
@@ -31,7 +31,7 @@ header{
 }
 .logo_icon{
     font-family: 'Dancing Script', cursive;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 300;
     color: magenta;
     font-weight: 100;
@@ -73,11 +73,11 @@ header{
 } */
 
 
-@media screen and (max-width: 1014px) {
+@media screen and (max-width: 1148px) {
     header{
         justify-content: space-between;
-        padding: 0 28px;
-        height: 60px;
+        padding: 10 0px;
+        /* height: 60px; */
     }
     .logo_icon{
         font-size: 40px;
@@ -85,22 +85,23 @@ header{
     }
     
     #menu{
-        display: inline;
+        display: block;
         font-size: 25px;
         color: black;
         cursor: pointer;
         font-weight: lighter;
     }
     #menu:hover{
-        color: aqua;
+        color: rgb(230, 13, 13);
     }
     #close{
         position: absolute;
         right: 24px;
+        top: 2em;
         display: block;
         font-size: 25px;
         border-radius: 50%;
-        color: black;
+        color: white;
         cursor: pointer;
     }
 
@@ -112,7 +113,7 @@ header{
         /* top: 100%; */
         bottom: 100%;
         right: 0;
-        background-color: rgb(224, 33, 33);
+        background-color: rgb(230, 13, 13);
         color: black;
         width: 100%;
         height: 60vh;
@@ -131,13 +132,235 @@ header{
        margin-top: 25px;
     }
     .nav_list li a{
-        font-size: 20px;
+        font-size: 1.5em;
         color: white;
     }
     .nav_list li a:hover{
         color: black;
     }
     .show {
-        bottom: 35%;
+        bottom: 38%;
     }
+}
+
+/*---------------banner front image-------------------*/
+.background{
+    max-width: 100%;
+    /* height: 100vh; */
+    position: relative;
+}
+#bg_img{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*-------------------background text formatting--------------------*/
+
+#banner_text{
+    
+    position:absolute;
+    top: 19vw;
+    left: 5vw;
+    color: white;
+}
+#banner_text h3{
+    font-size: 6vw;
+    line-height: 1em;
+    font-family: Franklin Gothic Heavy;
+    text-transform: uppercase;
+}
+#banner_text p{
+    font-size: 3vw;
+    font-family: Arial ;
+    text-transform: uppercase;
+}
+
+/*------------Latest release and best of sarita sargam using flex-------------------*/
+
+.flex_box1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 100%;
+    /* width: 100%; */
+    margin: 0 10%;
+  
+}
+
+.flex_box2{
+    background-color: dodgerblue;
+    padding: 10px;
+    flex: 100%;
+    width: 50%;
+}
+.flex_box3{
+    background-color: rgb(208, 221, 235);
+    padding: 10px;
+    flex: 100%;
+    width: 50%;
+}
+
+.f1 h3{
+    padding: 5%;
+    font-family: Arial;
+    text-transform: uppercase;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.f1 p{
+   margin-left: 50%;
+   margin-top: -3%;
+   
+}
+/* .vertival_line{
+    width: 2px;
+    height: 8vh;
+    background-color: rgb(185, 8, 8);
+    border: 8 solid black;
+   
+    
+} */
+#vertival_line{
+    width: 2px;
+    height: 8vh;
+    background-color: rgb(185, 8, 8);
+    border: 8 solid black;
+    
+}
+.flex_box2 .fitem{
+    margin: 2% 0;
+    width: 100%;
+    height: 18vh;
+    background-color: #F2F3F4;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.flex_box3 .fitem{
+    margin: 2% 0;
+    width: 100%;
+    height: 18vh;
+    background-color: #F2F3F4;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.flex_box3 .f2{
+    height: 57.3vh;
+    position: relative;
+}
+
+#f1{
+    background-color: white;
+    color: rgb(219, 6, 6);
+}
+#f5{
+    background-color: white;
+}
+
+#img_box{
+    width: 6rem;
+    height: 12vh;
+    background: rgb(240, 211, 240);
+    margin: 3vh 2vh;
+    position: absolute;
+    border-radius: 7px;
+  
+}
+#img_box img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    cursor: pointer;
+}
+#button_1 {
+    position: absolute;
+    /* display: block; */
+    width: 12rem;
+    height: 7vh;
+    /* margin: 5vh 14vw ; */
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: magenta;
+}
+#button_1 input{
+    width: 100%;
+    height: 100%;
+    border: 7px solid rgb(219, 6, 6);
+    cursor: pointer;
+    font-size: 20px;
+    color: rgb(219, 6, 6);
+    font-weight: 600;
+}
+#button_1 input:hover{
+    background-color: rgb(219, 6, 6);
+    color: white;
+}
+.song_name{
+    position: absolute;
+    /* background-color: rgb(252, 252, 5); */
+    width: 100%;
+    margin: 3vh 18vh;
+    cursor: pointer; 
+    
+}
+.song_name h3{
+    font-family: arial;
+    font-weight: 400;
+}
+.song_name p{
+    font-size: 2vh;
+    font-family: arial;
+}
+.music{
+    position: absolute;
+    /* background-color: green; */
+    width: 100%;
+    margin: 10vh 18vh;
+    cursor: pointer; 
+}
+.music audio{
+    display: flex;
+    max-width: 40vw;
+    height: 5vh;
+    border-radius: 34px;
+}
+.flex_box3 iframe{
+    position: absolute;
+    max-width: 100%;
+    width: 100vw;
+    height: 100%;
+    /* padding: 0px 10px ; */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+@media(max-width:800px){
+    .flex_box1{
+        flex-direction: column;
+       
+        margin: 0 0px;
+    }
+    .flex_box2{
+        width: 85%;  
+    }
+    .flex_box3{
+        width: 85%;  
+    }
+    /* .vertival_line{
+        width: 2px;
+        height: 8vh;
+        background-color: rgb(185, 8, 8);
+        border: 8 solid black;
+       
+        
+    } */
 }
