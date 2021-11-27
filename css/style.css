@@ -326,8 +326,8 @@ header{
     cursor: pointer; 
 }
 .music audio{
-    display: flex;
-    max-width: 50vw;
+    /* display: flex; */
+    max-width: 45vw;
     height: 5vh;
     border-radius: 34px;
 }
