@@ -9,7 +9,10 @@
     
 }
 
-
+html {
+    scroll-behavior: smooth;
+  }
+  
 
 a{
 text-decoration: none;
@@ -18,6 +21,8 @@ ul{
     list-style: none;
 }
 header{
+    /* z-index: 5;
+    position: fixed; */
     display: flex;
     background-color: white;
     justify-content: space-between;
@@ -73,7 +78,7 @@ header{
 } */
 
 
-@media screen and (max-width: 1148px) {
+@media screen and (max-width: 1023px) {
     header{
         justify-content: space-between;
         padding: 10 0px;
@@ -97,7 +102,7 @@ header{
     #close{
         position: absolute;
         right: 9vw;
-        top: 6%;
+        top: 5%;
         display: block;
         font-size: 2rem;
         border-radius: 50%;
@@ -125,7 +130,7 @@ header{
         display: flex;
         flex-direction: column;
          margin: 2rem 0;
-         margin-top: 10%;
+         margin-top: 8%;
         
     }
     .nav_list li {
@@ -141,6 +146,7 @@ header{
     .show {
         right: 0%;
     }
+   
 }
 
 /*---------------banner front image-------------------*/
@@ -185,6 +191,7 @@ header{
     max-width: 100%;
     /* width: 100%; */
     margin: 0 10%;
+    overflow: hidden;
   
 }
 
@@ -326,7 +333,7 @@ header{
     cursor: pointer; 
 }
 .music audio{
-    /* display: flex; */
+    display: flex;
     max-width: 45vw;
     height: 5vh;
     border-radius: 34px;
@@ -334,8 +341,8 @@ header{
 .flex_box3 iframe{
     position: absolute;
     max-width: 100%;
-    width: 100vw;
-    height: 100%;
+    width: 100%;
+    height: 100vh;
     /* padding: 0px 10px ; */
     top: 0;
     left: 0;
@@ -343,7 +350,7 @@ header{
     bottom: 0;
     margin: auto;
 }
-@media(max-width:800px){
+@media screen and (max-width:800px){
     .flex_box1{
         flex-direction: column;
        
@@ -368,3 +375,35 @@ header{
         
     } */
 }
+
+
+
+/*--------------------Goto top button-----------------*/
+
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(219, 6, 6);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 9px;
+    transition: 0.5s;
+  }
+  
+  #myBtn:hover {
+    background-color: #19f2f2;
+    width: 60px;
+    height: 60px;
+    border-radius: 0px 40% 80% 40%;
+    font-weight: 700;
+    transform: rotate(45deg);
+    color: black;    
+  }
