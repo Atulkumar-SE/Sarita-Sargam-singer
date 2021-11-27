@@ -97,7 +97,7 @@ header{
     #close{
         position: absolute;
         right: 9vw;
-        top: 8%;
+        top: 6%;
         display: block;
         font-size: 2rem;
         border-radius: 50%;
@@ -106,7 +106,7 @@ header{
     }
 
     #close:hover{
-        color:#0de60d;
+        color:#19f2f2;
     }
     .nav{
         position: fixed;
@@ -327,7 +327,7 @@ header{
 }
 .music audio{
     display: flex;
-    max-width: 45vw;
+    max-width: 50vw;
     height: 5vh;
     border-radius: 34px;
 }
