@@ -385,13 +385,23 @@ header{
         font-weight: 900;
     }
 
+
+    .music{
+        position: absolute;
+        /* background-color: green; */
+        max-width: 80%;
+        width: 15rem;
+        margin: 10vh 18vh;
+        cursor: pointer; 
+        
+    }
     .music audio{
- 
-  max-width: 100%;
+        display: inline-flex;
+        max-width: 100%;
         /* width: 11rem; */
-        width: 20vh;
-    height: 6vh;
-    float: left;
+           width: 70%;
+         height: 6vh;
+         float: left;
     }
     
         
