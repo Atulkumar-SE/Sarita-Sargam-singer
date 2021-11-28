@@ -404,6 +404,12 @@ header{
          float: left;
     }
     
+   .social_icon #wynkmusic{
+        color: red;
+        font-family: Arial rounded mt;
+        font-style: normal; 
+        font-size: 5vh;
+    }
         
     
     /* .vertival_line{
@@ -506,3 +512,30 @@ header{
     transform: rotate(45deg);
     color: black;    
   }
+
+  .footer{
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      padding: 5vw;
+      width: auto;
+  }
+  .social_icon i{
+      font-size: 10vh;
+      color: cyan;
+      margin-left: 10vh;
+      transition: 0.6s;
+      cursor: pointer;
+      
+  }
+  #wynkmusic{
+      color: red;
+      font-family: Arial rounded mt;
+      font-style: normal; 
+      font-size: 10vh;
+  }
+  .social_icon i:hover{
+      color: rgb(219, 6, 6);
+ 
+  }
+  
