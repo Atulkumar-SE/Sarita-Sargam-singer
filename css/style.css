@@ -388,9 +388,9 @@ header{
 
     .music{
         position: absolute;
-        /* background-color: green; */
+        background-color: green;
         max-width: 80%;
-        width: 58%;
+        width: 59%;
         margin: 10vh 18vh;
         cursor: pointer; 
         
