@@ -256,7 +256,7 @@ header{
 }
 .flex_box3 .f2{
     height: 57.3vh;
-    position: relative;
+    /* position: relative; */
 }
 
 #f1{
@@ -328,15 +328,18 @@ header{
 .music{
     position: absolute;
     /* background-color: green; */
-    width: 100%;
+    max-width: 80%;
+    width: 65%;
     margin: 10vh 18vh;
     cursor: pointer; 
+    
 }
 .music audio{
-    display: flex;
-    max-width: 45vw;
-    height: 5vh;
-    border-radius: 34px;
+    /* display: flex; */
+    /* max-width: 90%; */
+    width: 90%;
+    height: 6vh;
+    float: left;
 }
 .flex_box3 iframe{
     position: absolute;
@@ -365,6 +368,16 @@ header{
 
     #f1{
         font-weight: 900;
+    }
+
+
+    .music audio{
+        /* display: flex; */
+        width: 70%;
+    height: 6vh;
+    float: left;
+    
+        
     }
     /* .vertival_line{
         width: 2px;
