@@ -1,6 +1,15 @@
+//----------------menu button------------------
+
 const navMenu = document.getElementById('nav_menu'),
 toggleMenu = document.getElementById('toggle_menu'),
 closeMenu = document.getElementById('close_menu')
+
+// document.onclick = function(e){
+//   if(e.target.id !== 'nav')
+//   {
+//     nav.classList.remove('active');
+//   }
+// }
 
 toggleMenu.addEventListener('click', () => {
     navMenu.classList.toggle('show')
@@ -9,6 +18,8 @@ toggleMenu.addEventListener('click', () => {
 closeMenu.addEventListener('click', () => {
     navMenu.classList.remove('show')
 })
+
+
 
 //-------------------------top button--------------------
 
@@ -19,7 +30,7 @@ var mybutton = document.getElementById("myBtn");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 722 || document.documentElement.scrollTop > 722) {
+  if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 722) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
@@ -31,6 +42,44 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+//------------------------music slider------------------------
+
+
+let pennon = 0;
+
+function contoller_btn(x){
+    pennon = pennon + x;
+    musicslide(pennon);
+}
+
+musicslide(pennon);
+
+function musicslide(num){
+  let slide = document.getElementsByClassName('music_slide');
+
+    if(num == slide.length){
+        pennon = 0;
+        num = 0;
+    }
+    if(num < 0){
+        pennon = slide.length-1;
+        num = slide.length-1;
+    }
+  for(let y of slide){
+      y.style.display = "none";
+  }
+
+    slide[num].style.display = "block";
+}
+
+
+
+
+
+
+
+
 
 //---------------------Video slider-----------------------
 
