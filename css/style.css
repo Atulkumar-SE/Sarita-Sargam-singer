@@ -287,24 +287,26 @@ header{
 #button_1 {
     position: absolute;
     /* display: block; */
-    width: 12rem;
-    height: 7vh;
+    width: 18rem;
+    height: 4rem;
     /* margin: 5vh 14vw ; */
     top: 0;
     right: 0;
     left: 0;
     bottom: 0;
     margin: auto;
-    background-color: magenta;
 }
 #button_1 input{
     width: 100%;
     height: 100%;
     border: 7px solid rgb(219, 6, 6);
     cursor: pointer;
-    font-size: 20px;
+    font-size: 25px;
     color: rgb(219, 6, 6);
-    font-weight: 600;
+    font-weight: 400;
+    background-color: white;
+    font-weight: bold;
+
 }
 #button_1 input:hover{
     background-color: rgb(219, 6, 6);
@@ -567,7 +569,20 @@ header{
 
 @media screen and (max-width:500px){
 
-        
+    #button_1 {
+        width: 10rem;
+        height: 2rem;
+    }    
+    #button_1 input{
+        width: 100%;
+        height: 100%;
+        border: 3px solid rgb(219, 6, 6);
+        cursor: pointer;
+        font-size: 15px;
+        color: rgb(219, 6, 6);
+        font-weight: 400;
+    }
+
 .background{
     
     height: 30vh;
